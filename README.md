@@ -1,3 +1,3 @@
-# Quasar App
+# Secure Drive App
 
 > WIP

@@ -101,6 +101,8 @@ export default {
           icon: 'fas fa-exclamation-triangle',
           message: 'You need to accept the license and terms first'
         })
+      } else {
+        // TODO
       }
     },
 

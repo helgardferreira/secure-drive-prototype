@@ -8,6 +8,11 @@ const routes = [
     path: '/registration',
     component: () => import('layouts/MyLayout.vue'),
     children: [{ path: '', component: () => import('pages/Registration.vue') }]
+  },
+  {
+    path: '/login',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [{ path: '', component: () => import('pages/Login.vue') }]
   }
 ]
 

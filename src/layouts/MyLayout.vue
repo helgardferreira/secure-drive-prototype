@@ -6,7 +6,8 @@
           <q-icon name="menu"/>
         </q-btn>
 
-        <q-toolbar-title>Secure Drive App</q-toolbar-title>
+        <q-toolbar-title>SecureDrive</q-toolbar-title>
+        <q-btn flat color="white" label="Login" to="/login"/>
         <q-btn flat color="white" label="Register" to="/registration"/>
       </q-toolbar>
     </q-header>

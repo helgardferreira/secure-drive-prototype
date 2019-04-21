@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'PageRegistration',
+  name: 'PageLogin',
 
   data: () => ({
     // input fields

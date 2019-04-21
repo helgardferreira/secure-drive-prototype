@@ -1,34 +1,74 @@
 <template>
-  <q-page class="flex flex-center">
-    <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-      <q-input
-        filled
-        v-model="name"
-        label="Your name *"
-        hint="Name and surname"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
-      />
+  <q-page>
+    <q-card flat bordered class="q-ma-sm q-mt-md">
+      <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-sm q-pa-lg">
+        <q-input
+          outlined
+          v-model="firstName"
+          label="First name *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please enter your first name']"
+        />
+        <q-input
+          outlined
+          v-model="lastName"
+          label="Last name *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please enter your last name']"
+        />
+        <q-select
+          outlined
+          v-model="personalCompany"
+          :options="options"
+          label="Personal/Company *"
+          lazy-rules
+          :rules="[val => typeof val === 'string' || 'Select either Personal OR Company']"
+        />
+        <q-input
+          outlined
+          v-model="email"
+          label="Email *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please enter your email']"
+        />
+        <q-input
+          outlined
+          v-model="telephone"
+          label="Telephone *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please enter your telephone']"
+        />
+        <q-input
+          outlined
+          v-model="password"
+          type="password"
+          label="Password *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please enter your password']"
+        />
+        <q-input
+          outlined
+          v-model="confirmPassword"
+          type="password"
+          label="Confirm Password *"
+          lazy-rules
+          :rules="[ val => val && val.length > 0 || 'Please confirm your password']"
+        />
 
-      <q-input
-        filled
-        type="number"
-        v-model="age"
-        label="Your age *"
-        lazy-rules
-        :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
-        ]"
-      />
+        <div>
+          <q-toggle v-model="accept" label/>
+          <p style="display: inline">
+            I accept
+            <a href>the license and terms</a>
+          </p>
+        </div>
 
-      <q-toggle v-model="accept" label="I accept the license and terms"/>
-
-      <div>
-        <q-btn label="Submit" type="submit" color="primary"/>
-        <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm"/>
-      </div>
-    </q-form>
+        <div>
+          <q-btn label="Submit" type="submit" color="primary"/>
+          <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm"/>
+        </div>
+      </q-form>
+    </q-card>
   </q-page>
 </template>
 
@@ -36,14 +76,21 @@
 export default {
   name: 'PageRegistration',
 
-  data() {
-    return {
-      name: null,
-      age: null,
+  data: () => ({
+    // select fields
+    personalCompany: null,
+    options: ['Personal', 'Company'],
 
-      accept: false
-    }
-  },
+    // input fields
+    firstName: null,
+    lastName: null,
+    email: null,
+    telephone: null,
+    password: null,
+    confirmPassword: null,
+
+    accept: false
+  }),
 
   methods: {
     onSubmit() {
@@ -54,19 +101,17 @@ export default {
           icon: 'fas fa-exclamation-triangle',
           message: 'You need to accept the license and terms first'
         })
-      } else {
-        this.$q.notify({
-          color: 'green-4',
-          textColor: 'white',
-          icon: 'fas fa-check-circle',
-          message: 'Submitted'
-        })
       }
     },
 
     onReset() {
-      this.name = null
-      this.age = null
+      this.firstName = null
+      this.lastName = null
+      this.personalCompany = null
+      this.email = null
+      this.telephone = null
+      this.password = null
+      this.confirmPassword = null
       this.accept = false
     }
   }

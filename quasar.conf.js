@@ -41,7 +41,10 @@ module.exports = function(ctx) {
         'QInput', // inherit QField
         'QSelect', // inherit QField
         'QForm',
-        'QToggle'
+        'QToggle',
+        'QCard',
+        'QCardSection',
+        'QCardActions'
       ],
 
       directives: ['Ripple'],

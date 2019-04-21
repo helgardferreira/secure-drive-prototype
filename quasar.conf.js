@@ -21,6 +21,7 @@ module.exports = function(ctx) {
       // all: true, // --- includes everything; for dev only!
 
       components: [
+        // Default
         'QLayout',
         'QHeader',
         'QDrawer',
@@ -33,7 +34,14 @@ module.exports = function(ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+
+        // Additional
+        'QField',
+        'QInput', // inherit QField
+        'QSelect', // inherit QField
+        'QForm',
+        'QToggle'
       ],
 
       directives: ['Ripple'],

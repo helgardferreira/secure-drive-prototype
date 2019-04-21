@@ -7,8 +7,6 @@
         </q-btn>
 
         <q-toolbar-title>Secure Drive App</q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 

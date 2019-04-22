@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <q-card flat bordered class="q-ma-sm q-mt-md q-mb-xl">
+    <q-card flat bordered class="q-ma-sm q-mt-md">
       <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-sm q-pa-lg">
         <q-input
           outlined
@@ -69,6 +69,12 @@
         </div>
       </q-form>
     </q-card>
+    <div class="text-center q-mt-md q-mb-xl">
+      <p>
+        Already have an account?
+        <router-link to="/login">Log In</router-link>
+      </p>
+    </div>
   </q-page>
 </template>
 

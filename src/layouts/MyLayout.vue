@@ -14,8 +14,6 @@
         </q-btn>
 
         <q-toolbar-title>SecureDrive</q-toolbar-title>
-        <q-btn flat color="white" label="Login" to="/login"/>
-        <q-btn flat color="white" label="Register" to="/registration"/>
       </q-toolbar>
     </q-header>
 

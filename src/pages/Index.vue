@@ -14,21 +14,34 @@
             label="Make Booking"
             color="primary"
             class="menu-btn-round"
-            @click="$router.push('/booking')"
+            @click="goToBooking"
             v-if="isRound"
           />
           <q-btn
             label="Make Booking"
             color="primary"
             class="menu-btn-regular full-width"
-            to="/booking"
+            @click="goToBooking"
             v-else
           />
         </div>
 
         <div class="col text-center q-mx-sm">
-          <q-btn round label="Make Payment" color="primary" class="menu-btn-round" v-if="isRound"/>
-          <q-btn label="Make Payment" color="primary" class="menu-btn-regular full-width" v-else/>
+          <q-btn
+            round
+            label="Make Payment"
+            color="primary"
+            class="menu-btn-round"
+            v-if="isRound"
+            disable
+          />
+          <q-btn
+            label="Make Payment"
+            color="primary"
+            class="menu-btn-regular full-width"
+            v-else
+            disable
+          />
         </div>
       </div>
 
@@ -40,12 +53,14 @@
             color="primary"
             class="menu-btn-round"
             v-if="isRound"
+            disable
           />
           <q-btn
             label="Rate Our Services"
             color="primary"
             class="menu-btn-regular full-width"
             v-else
+            disable
           />
         </div>
       </div>
@@ -58,18 +73,51 @@
             color="primary"
             class="menu-btn-round"
             v-if="isRound"
+            disable
           />
-          <q-btn label="Update Profile" color="primary" class="menu-btn-regular full-width" v-else/>
+          <q-btn
+            label="Update Profile"
+            color="primary"
+            class="menu-btn-regular full-width"
+            v-else
+            disable
+          />
         </div>
 
         <div class="col text-center q-mx-sm">
-          <q-btn round label="Enquiry" color="primary" class="menu-btn-round" v-if="isRound"/>
-          <q-btn label="Enquiry" color="primary" class="menu-btn-regular full-width" v-else/>
+          <q-btn
+            round
+            label="Enquiry"
+            color="primary"
+            class="menu-btn-round"
+            v-if="isRound"
+            disable
+          />
+          <q-btn
+            label="Enquiry"
+            color="primary"
+            class="menu-btn-regular full-width"
+            v-else
+            disable
+          />
         </div>
 
         <div class="col text-center q-mx-sm">
-          <q-btn round label="Call Now" color="primary" class="menu-btn-round" v-if="isRound"/>
-          <q-btn label="Call Now" color="primary" class="menu-btn-regular full-width" v-else/>
+          <q-btn
+            round
+            label="Call Now"
+            color="primary"
+            class="menu-btn-round"
+            v-if="isRound"
+            disable
+          />
+          <q-btn
+            label="Call Now"
+            color="primary"
+            class="menu-btn-regular full-width"
+            v-else
+            disable
+          />
         </div>
       </div>
 
@@ -96,8 +144,8 @@ export default {
   }),
 
   methods: {
-    test() {
-      console.log('test')
+    goToBooking() {
+      setTimeout(() => void this.$router.push('/booking'), 250)
     }
   }
 }

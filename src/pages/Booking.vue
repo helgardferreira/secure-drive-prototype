@@ -20,8 +20,8 @@
         />
 
         <div class="row justify-between">
-          <q-btn label="Cancel" type="reset" color="primary" flat class="col-xs-5"/>
           <q-btn label="Next" type="submit" color="primary" class="col-xs-5"/>
+          <q-btn label="Cancel" type="reset" color="primary" flat class="col-xs-5"/>
         </div>
       </q-form>
     </q-card>

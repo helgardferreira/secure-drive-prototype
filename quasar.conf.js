@@ -95,11 +95,10 @@ module.exports = function(ctx) {
       manifest: {
         // name: 'Secure Drive App',
         // short_name: 'Quasar-PWA',
-        // description: 'Best PWA App in town!',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
-        theme_color: '#027be3',
+        theme_color: '#e53935',
         icons: [
           {
             src: 'statics/icons/icon-128x128.png',

@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <q-card flat bordered class="q-ma-sm q-mt-md">
+    <q-card flat bordered class="q-ma-sm q-mt-md q-mb-xl">
       <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-sm q-pa-lg">
         <q-input
           outlined
@@ -103,6 +103,7 @@ export default {
         })
       } else {
         // TODO
+        this.$router.push('/login')
       }
     },
 

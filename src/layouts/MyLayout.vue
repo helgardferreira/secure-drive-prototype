@@ -2,7 +2,14 @@
   <q-layout>
     <q-header elevated class>
       <q-toolbar>
-        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
+        <q-btn
+          flat
+          dense
+          round
+          @click="leftDrawerOpen = !leftDrawerOpen"
+          aria-label="Menu"
+          v-if="$store.state.isLoggedIn"
+        >
           <q-icon name="menu"/>
         </q-btn>
 
@@ -46,7 +53,7 @@ export default {
   name: 'MyLayout',
   data() {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: false
     }
   },
   methods: {

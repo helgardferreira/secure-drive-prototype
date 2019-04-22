@@ -78,6 +78,7 @@ export default {
   methods: {
     onSubmit() {
       // TODO
+      this.$store.dispatch('setIsloggedIn', true)
       this.alert = true
     },
 

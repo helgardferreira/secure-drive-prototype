@@ -2,7 +2,10 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Index.vue') }]
+    children: [{ path: '', component: () => import('pages/Index.vue') }],
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/registration',
@@ -17,7 +20,10 @@ const routes = [
   {
     path: '/booking',
     component: () => import('layouts/MyLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Booking.vue') }]
+    children: [{ path: '', component: () => import('pages/Booking.vue') }],
+    meta: {
+      requiresAuth: true
+    }
   }
 ]
 

@@ -12,6 +12,19 @@ Vue.use(Vuex)
 
 export default function(/* { ssrContext } */) {
   const Store = new Vuex.Store({
+    state: {
+      isLoggedIn: false
+    },
+    mutations: {
+      setIsloggedIn(state, payload) {
+        state.isLoggedIn = payload
+      }
+    },
+    actions: {
+      setIsloggedIn({ commit }, payload) {
+        commit('setIsloggedIn', payload)
+      }
+    },
     modules: {
       // example
     },

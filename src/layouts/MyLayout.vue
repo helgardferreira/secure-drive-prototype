@@ -14,13 +14,20 @@
 
     <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
         <q-item clickable to="/" exact>
           <q-item-section avatar>
             <q-icon name="home"/>
           </q-item-section>
           <q-item-section>
             <q-item-label>Home</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/booking" exact>
+          <q-item-section avatar>
+            <q-icon name="note_add"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Make Booking</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>

@@ -9,7 +9,7 @@
 
       <div class="col row justify-around">
         <div class="col text-center q-mx-sm">
-          <q-btn label="Make Booking" color="primary" class="menu-btn full-width"/>
+          <q-btn label="Make Booking" color="primary" class="menu-btn full-width" to="/booking"/>
         </div>
 
         <div class="col text-center q-mx-sm">

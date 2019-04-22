@@ -63,9 +63,9 @@
           </p>
         </div>
 
-        <div>
-          <q-btn label="Submit" type="submit" color="primary"/>
-          <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm"/>
+        <div class="row justify-between">
+          <q-btn label="Reset" type="reset" color="primary" flat class="col-xs-5"/>
+          <q-btn label="Submit" type="submit" color="primary" class="col-xs-5"/>
         </div>
       </q-form>
     </q-card>

@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="column">
+    <div class="column q-mx-sm">
       <div class="col row justify-around">
         <div class="col text-center">
           <h4>SECUREDRIVE</h4>
@@ -8,32 +8,32 @@
       </div>
 
       <div class="col row justify-around">
-        <div class="col text-center">
-          <q-btn round label="Make Booking" color="primary" class="menu-btn"/>
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Make Booking" color="primary" class="menu-btn full-width"/>
         </div>
 
-        <div class="col text-center">
-          <q-btn round label="Make Payment" color="primary" class="menu-btn"/>
-        </div>
-      </div>
-
-      <div class="col row justify-around">
-        <div class="col text-center">
-          <q-btn round label="Rate Our Services" color="primary" class="menu-btn"/>
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Make Payment" color="primary" class="menu-btn full-width"/>
         </div>
       </div>
 
       <div class="col row justify-around">
-        <div class="col text-center">
-          <q-btn round label="Update Profile" color="primary" class="menu-btn"/>
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Rate Our Services" color="primary" class="menu-btn full-width"/>
+        </div>
+      </div>
+
+      <div class="col row justify-around">
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Update Profile" color="primary" class="menu-btn full-width"/>
         </div>
 
-        <div class="col text-center">
-          <q-btn round label="Enquiry" color="primary" class="menu-btn"/>
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Enquiry" color="primary" class="menu-btn full-width"/>
         </div>
 
-        <div class="col text-center">
-          <q-btn round label="Call Now" color="primary" class="menu-btn"/>
+        <div class="col text-center q-mx-sm">
+          <q-btn label="Call Now" color="primary" class="menu-btn full-width"/>
         </div>
       </div>
     </div>
@@ -63,7 +63,8 @@ export default {
 
 .menu-btn {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  min-width: 6em;
-  min-height: 6em;
+  /* min-width: 6em; */
+  /* min-height: 6em; */
+  min-height: 4em;
 }
 </style>

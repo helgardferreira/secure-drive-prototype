@@ -27,12 +27,52 @@
             <q-item-label>Home</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable to="/booking" exact>
+        <q-item clickable to="/booking">
           <q-item-section avatar>
             <q-icon name="note_add"/>
           </q-item-section>
           <q-item-section>
             <q-item-label>Make Booking</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/" disable>
+          <q-item-section avatar>
+            <q-icon name="payment"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Make Payment</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/" disable>
+          <q-item-section avatar>
+            <q-icon name="star"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Rate Our Services</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/" disable>
+          <q-item-section avatar>
+            <q-icon name="person"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Update Profile</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/" disable>
+          <q-item-section avatar>
+            <q-icon name="question_answer"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Enquiry</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/" disable>
+          <q-item-section avatar>
+            <q-icon name="call"/>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Call Now</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>

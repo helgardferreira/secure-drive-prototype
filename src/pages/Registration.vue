@@ -59,7 +59,8 @@
           <q-toggle v-model="accept" label/>
           <p style="display: inline">
             I accept
-            <a href>the license and terms</a>
+            <!-- TODO IMPORTANT!: REPLACE WITH ACTUAL TOS LATER -->
+            <a href="https://policies.google.com/terms?hl=en&gl=za">the license and terms</a>
           </p>
         </div>
 

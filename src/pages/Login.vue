@@ -39,7 +39,7 @@
       </p>
     </div>
 
-    <q-dialog v-model="alert" full-width ref="loginDialog">
+    <q-dialog v-model="alert" full-width>
       <q-card>
         <q-card-section>
           <div class="text-h6">Alert</div>
@@ -92,7 +92,6 @@ export default {
     },
 
     closeLogin() {
-      this.$refs.loginDialog.hide()
       setTimeout(() => void this.$router.push('/'), 100)
     }
   }
